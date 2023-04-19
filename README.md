@@ -22,6 +22,8 @@ The pipeline was run on Metacentrum using a profile `profiles/config.yml`
 snakemake --profile profiles/ "$@"
 ~~~
 
+![dag](dag.svg)
+
 The pipeline consists of several steps as illustrated in above diagram:
 * downloading reads data and uzipping
 * downloading reference genome and unzipping
