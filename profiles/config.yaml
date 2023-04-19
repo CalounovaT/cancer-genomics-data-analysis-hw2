@@ -1,0 +1,7 @@
+cluster:
+  qsub 
+    -o {log}.pbs.out 
+    -e {log}.pbs.err 
+    -l select=1:ncpus={threads}:mem={params.memory}gb
+#scheduler: "greedy"
+jobs: 500
